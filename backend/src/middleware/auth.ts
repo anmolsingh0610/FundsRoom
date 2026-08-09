@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { verifyToken, JwtPayload } from '../lib/jwt';
-import { Role } from '../generated/prisma';
+import { Role } from '@prisma/client';
 
 declare global {
   namespace Express {

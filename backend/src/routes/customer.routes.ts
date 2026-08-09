@@ -3,7 +3,7 @@ import { prisma } from '../lib/prisma';
 import { authenticate, authorize } from '../middleware/auth';
 import { validate } from '../middleware/validate';
 import { createCustomerSchema, updateCustomerSchema, addFollowUpSchema } from '../schemas/customer.schema';
-import { Role } from '../generated/prisma';
+import { Role } from '@prisma/client';
 
 export const router = Router();
 router.use(authenticate);
