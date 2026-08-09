@@ -12,6 +12,21 @@ A full-stack ERP/CRM system built for wholesale/distribution companies. Manages 
 | **Auth** | JWT (JSON Web Tokens) |
 | **Validation** | Zod v4 |
 | **Icons** | Lucide React |
+| **Hosting** | Vercel (Serverless Functions) |
+
+## Live Demo & Cloud Deployment
+
+This project is fully configured for **zero-cost serverless deployment** on Vercel using a unified repository structure.
+
+- **Frontend URL**: `https://<your-vercel-frontend-domain>.vercel.app`
+- **Backend API**: `https://<your-vercel-backend-domain>.vercel.app`
+- **Database**: Hosted on [Neon](https://neon.tech/) Serverless Postgres
+
+### Deploying to Vercel
+1. Import this repository into Vercel as **two separate projects**.
+2. **For the Backend**: Set root directory to `backend`, add your `DATABASE_URL` and `JWT_SECRET` environment variables.
+3. **For the Frontend**: Set root directory to `frontend`, add `VITE_API_URL` pointing to the live backend.
+*(Vercel automatically detects the Express configuration and Prisma engines and deploys them as highly scalable serverless functions).*
 
 ## Architecture
 
