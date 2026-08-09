@@ -39,6 +39,6 @@
     "@types/pg": "^8.21.0",
     "prisma": "^7.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^7.0.2"
+    "typescript": "^5.6.3"
   }
 }
